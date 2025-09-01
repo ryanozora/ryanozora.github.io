@@ -1,0 +1,27 @@
+title: "My Tech Blog"
+tagline: "Database Engineering, SQL, and Beyond"
+description: "A personal blog about databases, technology, and engineering."
+url: "https://ryanozora.github.io"
+
+theme: jekyll-theme-chirpy
+
+# Navigation links
+nav:
+  - title: "Home"
+    url: /
+  - title: "About"
+    url: /about/
+  - title: "Archive"
+    url: /archives/
+
+author:
+  name: Ryan Ozora
+  email: ryan.ozora@gmail.com
+  github: ryanozora
+  linkedin: Ryan Ozora
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-paginate
