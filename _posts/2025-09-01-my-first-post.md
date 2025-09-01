@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "My First Blog Post"
-date: 2025-09-01 12:00:00 +0700
+date: 2025-09-01 13:00:00 +0700
 categories: [Blog, Introduction]
 tags: [hello, jekyll, chirpy]
 ---
