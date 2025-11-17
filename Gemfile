@@ -1,7 +1,0 @@
-source "https://rubygems.org"
-gem "jekyll", "~> 4.3"
-gem "jekyll-theme-chirpy"
-gem "webrick"
-gem "jekyll-feed"
-gem "jekyll-seo-tag"
-gem "jekyll-paginate"
