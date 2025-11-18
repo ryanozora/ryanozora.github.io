@@ -1,77 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ryan Ozora — SQL Server DBA & Data Engineer</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ryan Ozora | SQL Server DBA & Data Engineer</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; color: #333; }
-    header { background: #0a1a2f; color: #fff; padding: 40px 20px; text-align: center; }
-    header h1 { margin: 0; font-size: 2.2rem; }
-    header p { font-size: 1.1rem; opacity: 0.9; }
-    section { padding: 40px 20px; max-width: 900px; margin: auto; }
-    h2 { border-left: 5px solid #0a1a2f; padding-left: 10px; margin-bottom: 20px; }
-    .card { background: #fff; padding: 20px; border-radius: 10px; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-    footer { background: #0a1a2f; color: #fff; text-align: center; padding: 20px; margin-top: 40px; }
-    a { color: #0a1a2f; text-decoration: none; font-weight: bold; }
-    a:hover { text-decoration: underline; }
+    body { margin:0; font-family: 'Segoe UI', sans-serif; background:#0d1520; color:white; }
+    header { display:flex; justify-content:space-between; align-items:center; padding:20px 40px; background:#0b111a; position:sticky; top:0; }
+    header a { color:white; margin-left:25px; text-decoration:none; font-weight:600; }
+    .container { width:90%; max-width:1100px; margin:auto; padding:60px 0; }
+    h2 { font-size:2.3rem; margin-bottom:20px; }
+    /* ABOUT */
+    .about { display:flex; flex-wrap:wrap; align-items:center; gap:40px; }
+    .about-text { flex:1; }
+    .about img { width:220px; height:220px; border-radius:50%; object-fit:cover; border:6px solid white; }
+    .btn { background:#e5d7c8; color:#000; padding:12px 26px; border-radius:25px; display:inline-block; margin-top:20px; font-weight:600; text-decoration:none; }
+
+    /* SECTIONS */
+    .section { padding:60px 0; border-top:1px solid #2b3a4d; }
+
+    /* EDUCATION */
+    .edu-grid { display:grid; grid-template-columns:1fr 1fr; gap:30px; }
+
+    /* EXPERIENCE */
+    .exp-item { margin-bottom:30px; }
+    .exp-title { font-weight:700; font-size:1.2rem; }
+
+    /* SKILLS */
+    .skills-list { display:flex; flex-wrap:wrap; gap:15px; }
+    .skill { background:#16202c; padding:10px 18px; border-radius:8px; }
+
+    /* CONTACT */
+    .contact a { color:#4aa3ff; text-decoration:none; }
+
+    footer { text-align:center; padding:30px 0; border-top:1px solid #2b3a4d; margin-top:40px; font-size:0.9rem; opacity:0.8; }
+
+    @media(max-width:768px) {
+      .edu-grid { grid-template-columns:1fr; }
+      header { flex-wrap:wrap; }
+    }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Ryan Ozora</h1>
-    <p>SQL Server Database Administrator • Data Engineer • ETL & Python Data Processing</p>
-  </header>
 
-  <section>
-    <h2>About Me</h2>
-    <div class="card">
-      <p>I am a Microsoft SQL Server Database Administrator specializing in performance tuning, high availability, monitoring, and database optimization. I also handle data engineering tasks including ETL pipelines, data cleaning using Python, automation, and building data workflows.</p>
-    </div>
-  </section>
+<header>
+  <div style="font-size:1.3rem; font-weight:700;">Ryan Ozora</div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="blog.html">Blog</a>
+  </nav>
+</header>
 
-  <section>
-    <h2>Skills</h2>
-    <div class="card">
-      <ul>
-        <li>SQL Server: Performance Tuning, HA/DR, Availability Groups, Indexing Strategies</li>
-        <li>DBA Tasks: Backups, Monitoring, Migration, Replication, Troubleshooting</li>
-        <li>Data Engineering: ETL, Data Cleaning, Data Modeling, Automation</li>
-        <li>Python: Pandas, Data Analysis, ETL Pipelines</li>
-        <li>Tools: SSIS, Azure Data Factory, PowerShell, Git</li>
-      </ul>
-    </div>
-  </section>
-
-  <section>
-    <h2>Portfolio</h2>
-    <div class="card">
-      <h3>SQL Server Performance Tuning Case Study</h3>
-      <p>Optimized production query from 50 seconds to 300 ms using indexing strategies, join rewrites, and plan analysis.</p>
+<div class="container" id="about">
+  <h2>About Me</h2>
+  <div class="about">
+    <div class="about-text">
+      <p>Hello! I'm <strong>Ryan Ozora</strong>, a technical consultant specializing in database systems based in Jakarta and Tangerang, Indonesia. With over 5 years of experience as a Database Administrator and Data Engineer, I’ve worked with various companies and government agencies to architect robust database servers, maintain the performance of SQL Server environments, and troubleshoot complex database issues.</p>
+      <p>My passion lies in building efficient, secure, and high‑performance data systems that empower decision‑makers and support business growth.</p>
+      <a class="btn" href="portfolio.html">My Portfolio</a>
     </div>
 
-    <div class="card">
-      <h3>Python ETL Pipeline</h3>
-      <p>Built automated data cleaning pipeline using Pandas, scheduled jobs, and load process into SQL Server.</p>
-    </div>
+    <img src="profile.jpg" alt="Profile Picture">
+  </div>
+</div>
 
-    <div class="card">
-      <h3>Availability Group Setup Documentation</h3>
-      <p>Created full step-by-step AG configuration guide with scripts, monitoring, failover tests, and validation steps.</p>
+<div class="container section" id="education">
+  <h2>Education</h2>
+  <div class="edu-grid">
+    <div>
+      <p><strong>2016–2020</strong></p>
+      <p>Institut Teknologi Bandung<br><i>(Bandung Institute of Technology)</i></p>
     </div>
-  </section>
-
-  <section>
-    <h2>Contact</h2>
-    <div class="card">
-      <p>Email: <a href="mailto:your_email@example.com">your_email@example.com</a></p>
-      <p>GitHub: <a href="#">your-github-link</a></p>
-      <p>LinkedIn: <a href="#">your-linkedin-profile</a></p>
+    <div>
+      <p><strong>Bachelor's Degree in Industrial Engineering</strong></p>
+      <p>Graduated with Cum Laude Distinction</p>
+      <p>GPA: 3.74 / 4.00</p>
     </div>
-  </section>
+  </div>
+</div>
 
-  <footer>
-    <p>© 2025 Ryan Ozora. Built with GitHub Pages.</p>
-  </footer>
+<div class="container section" id="experience">
+  <h2>Experience</h2>
+
+  <div class="exp-item">
+    <div class="exp-title">Business Intelligence Intern – Toyota Astra Motor</div>
+    <div>Jan 2020 – Aug 2020 — Jakarta, Indonesia</div>
+    <p>Worked with SQL Server, DAX, Power BI, ETL pipelines, and data modelling for internal reporting and analytics.</p>
+  </div>
+
+  <div class="exp-item">
+    <div class="exp-title">Data Analyst Assistant – Institut Teknologi Bandung</div>
+    <div>Feb 2018 – Oct 2020</div>
+    <p>Supported academic research in decision systems, data visualization, and analytics using Python, R, SQL, C++, and Excel VBA.</p>
+  </div>
+
+</div>
+
+<div class="container section" id="skills">
+  <h2>Skills</h2>
+  <div class="skills-list">
+    <div class="skill">Microsoft SQL Server</div>
+    <div class="skill">Performance Tuning</div>
+    <div class="skill">High Availability (AG, Log Shipping)</div>
+    <div class="skill">ETL Development</div>
+    <div class="skill">Python (Pandas, Automation)</div>
+    <div class="skill">Power BI / DAX</div>
+    <div class="skill">SSIS / ADF</div>
+    <div class="skill">Data Modeling</div>
+    <div class="skill">Troubleshooting & Monitoring</div>
+  </div>
+</div>
+
+<div class="container section" id="contact">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+  <p>LinkedIn: <a href="#">Your LinkedIn</a></p>
+  <p>GitHub: <a href="#">Your GitHub</a></p>
+</div>
+
+<footer>
+  © 2025 Ryan Ozora — All Rights Reserved
+</footer>
+
 </body>
 </html>
