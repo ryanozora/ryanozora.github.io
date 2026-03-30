@@ -1,0 +1,184 @@
+/* GLOBAL */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(180deg, #0b111a 0%, #0d1520 100%);
+  color: white;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: #0b111a;
+  position: sticky;
+  top: 0;
+}
+
+header a {
+  color: white;
+  margin-left: 25px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* LAYOUT */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 60px 0;
+}
+
+h2 {
+  font-size: 2.3rem;
+  margin-bottom: 20px;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 85vh;
+  gap: 40px;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.hero-text h3 {
+  font-weight: 400;
+  color: #9fb3c8;
+  margin-bottom: 20px;
+}
+
+.hero-buttons {
+  margin-top: 25px;
+}
+
+.hero-buttons a {
+  margin-right: 15px;
+}
+
+.hero img {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid white;
+}
+
+/* ABOUT */
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid white;
+}
+
+/* BUTTON */
+.btn {
+  background: #e5d7c8;
+  color: #000;
+  padding: 12px 26px;
+  border-radius: 25px;
+  display: inline-block;
+  margin-top: 20px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* MAKE FIRST BUTTON STAND OUT */
+.btn:first-child {
+  background: #4aa3ff;
+  color: white;
+}
+
+/* SECTIONS */
+.section {
+  padding: 60px 0;
+  border-top: 1px solid #2b3a4d;
+}
+
+/* EDUCATION */
+.edu-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+/* EXPERIENCE */
+.exp-item {
+  margin-bottom: 30px;
+}
+
+.exp-title {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+/* SKILLS */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.skill {
+  background: #16202c;
+  padding: 10px 18px;
+  border-radius: 8px;
+}
+
+/* CONTACT */
+.contact a {
+  color: #4aa3ff;
+  text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px 0;
+  border-top: 1px solid #2b3a4d;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .edu-grid {
+    grid-template-columns: 1fr;
+  }
+
+  header {
+    flex-wrap: wrap;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+}
