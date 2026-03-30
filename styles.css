@@ -42,7 +42,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 85vh;
+  padding: 80px 0;
   gap: 40px;
 }
 
