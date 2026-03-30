@@ -42,8 +42,13 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 80px 0;
+  padding: 40px 0; /* 🔥 reduced from 80px */
   gap: 40px;
+}
+
+/* 🔥 REMOVE extra spacing from container inside hero */
+.hero.container {
+  padding: 40px 0;
 }
 
 .hero-text {
