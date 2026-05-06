@@ -147,6 +147,21 @@ a {
   text-decoration: none;
 }
 
+/* CERTIFICATION */
+.cert-item {
+  margin-bottom: 25px;
+  padding: 20px;
+  background: #16202c;
+  border-radius: 12px;
+  border: 1px solid #2b3a4d;
+}
+
+.cert-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
 /* FOOTER */
 footer {
   text-align: center;
